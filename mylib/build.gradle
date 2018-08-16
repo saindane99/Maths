@@ -1,69 +1,30 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.jfrog.bintray'
-apply plugin: 'com.github.dcendents.android-maven'
 
 ext {
-    bintrayRepo = 'maven'
-    bintrayName = 'fb-like'
+    bintrayRepo = 'Maths'
+    bintrayName = 'math-like'
 
-    publishedGroupId = 'com.inthecheesefactory.thecheeselibrary'
-    libraryName = 'FBLike'
-    artifact = 'fb-like'
+    publishedGroupId = 'com.maths.mylib'
+    libraryName = 'MathLike'
+    artifact = 'math-like'
 
     libraryDescription = 'A wrapper for Facebook Native Like Button (LikeView) on Android'
 
-    siteUrl = 'https://github.com/nuuneoi/FBLikeAndroid'
-    gitUrl = 'https://github.com/nuuneoi/FBLikeAndroid.git'
+    siteUrl = 'https://github.com/saindane99/Maths'
+    gitUrl = 'https://github.com/saindane99/Maths.git'
 
-    libraryVersion = '0.9.3'
+    libraryVersion = '1.0.0'
 
-    developerId = 'nuuneoi'
-    developerName = 'Sittiphol Phanvilai'
-    developerEmail = 'sittiphol@gmail.com'
+    developerId = 'gladiator'
+    developerName = 'Shailesh Saindane'
+    developerEmail = 'ssaindane77@gmail.com'
+    organization = 'sanginfo99'
 
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
 }
-group = publishedGroupId // Maven Group ID for the artifact
 
-install {
-    repositories.mavenInstaller {
-        // This generates POM.xml with proper parameters
-        pom.project {
-            packaging 'aar'
-            groupId publishedGroupId
-            artifactId Artifact
-
-            // Add your description here
-            name libraryName
-            description libraryDescription
-            url siteUrl
-
-            // Set your license
-            licenses {
-                license {
-                    name licenseName
-                    url licenseUrl
-                }
-            }
-            developers {
-                developer {
-                    id developerId
-                    name developerName
-                    email developerEmail
-                }
-            }
-            scm {
-                connection gitUrl
-                developerConnection gitUrl
-                url siteUrl
-
-            }
-        }
-
-    }
-}
 android {
     compileSdkVersion 27
 
@@ -90,4 +51,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
     testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
+apply from: 'https://raw.githubusercontent.com/saindane99/Maths/master/mylib/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/saindane99/Maths/master/mylib/bintrayv1.gradle'
