@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <settings xsi:schemaLocation='http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd'
-          xmlns='http://maven.apache.org/SETTINGS/1.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
-    
+    xmlns='http://maven.apache.org/SETTINGS/1.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+
+    <servers>
+        <server>
+            <id>bintray-sanginfo99-Maths</id>
+            <username>gladiator</username>
+            <password>6e468b3d6f8f8d36b12ff197a0b6eefcd2fadc12</password>
+        </server>
+    </servers>
+
     <profiles>
         <profile>
             <repositories>
@@ -11,7 +19,7 @@
                     </snapshots>
                     <id>bintray-sanginfo99-Maths</id>
                     <name>bintray</name>
-                    <url>https://dl.bintray.com/sanginfo99/Maths</url>
+                    <url>https://sanginfo99.bintray.com/Maths</url>
                 </repository>
             </repositories>
             <pluginRepositories>
@@ -21,7 +29,7 @@
                     </snapshots>
                     <id>bintray-sanginfo99-Maths</id>
                     <name>bintray-plugins</name>
-                    <url>https://dl.bintray.com/sanginfo99/Maths</url>
+                    <url>https://sanginfo99.bintray.com/Maths</url>
                 </pluginRepository>
             </pluginRepositories>
             <id>bintray</id>
