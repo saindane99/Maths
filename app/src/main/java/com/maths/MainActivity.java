@@ -12,7 +12,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Toast.makeText(getApplicationContext(), MyMath.Plus(10,10), Toast.LENGTH_SHORT).show();
+        try {
+            Toast.makeText(getApplicationContext(), "Addition = " + MyMath.Plus(10, 10), Toast.LENGTH_SHORT).show();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 }
