@@ -8,12 +8,12 @@ ext {
     libraryName = 'MathLib'
     artifact = 'math-lib'
 
-    libraryDescription = 'A wrapper for Facebook Native Like Button (LikeView) on Android'
+    libraryDescription = 'Library of Arithmetic Operations.'
 
     siteUrl = 'https://github.com/saindane99/Maths'
     gitUrl = 'https://github.com/saindane99/Maths.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = '1.0.3'
 
     developerId = 'gladiator'
     developerName = 'Shailesh Saindane'

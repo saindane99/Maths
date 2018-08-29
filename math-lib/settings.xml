@@ -9,9 +9,9 @@
                     <snapshots>
                         <enabled>false</enabled>
                     </snapshots>
-                    <id>bintray-sanginfo99-Maths</id>
+                    <id>bintray-gladiator-maven-math</id>
                     <name>bintray</name>
-                    <url>https://sanginfo99.bintray.com/Maths</url>
+                    <url>https://dl.bintray.com/gladiator/maven-math</url>
                 </repository>
             </repositories>
             <pluginRepositories>
@@ -19,9 +19,9 @@
                     <snapshots>
                         <enabled>false</enabled>
                     </snapshots>
-                    <id>bintray-sanginfo99-Maths</id>
+                    <id>bintray-gladiator-maven-math</id>
                     <name>bintray-plugins</name>
-                    <url>https://sanginfo99.bintray.com/Maths</url>
+                    <url>https://dl.bintray.com/gladiator/maven-math</url>
                 </pluginRepository>
             </pluginRepositories>
             <id>bintray</id>

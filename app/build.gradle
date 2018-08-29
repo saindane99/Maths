@@ -18,9 +18,6 @@ android {
     }
 }
 
-repositories {
-    maven { url 'https://dl.bintray.com/sanginfo99/Maths' }
-}
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:27.1.1'
