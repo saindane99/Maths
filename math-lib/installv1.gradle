@@ -1,7 +1,6 @@
 apply plugin: 'com.github.dcendents.android-maven'
 
 group = publishedGroupId // Maven Group ID for the artifact
-version = libraryVersion
 
 install {
     repositories.mavenInstaller {
@@ -9,7 +8,7 @@ install {
         pom.project {
             packaging 'aar'
             groupId publishedGroupId
-            artifactId Artifact
+            artifactId artifact
 
             // Add your description here
             name libraryName

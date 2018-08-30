@@ -65,34 +65,3 @@ bintray {
         }
     }
 }
-
-publish {
-
-    def groupProjectID = 'com.maths.mylib'
-    def artifactProjectID = 'math-lib'
-    def publishVersionID = '1.0.4'
-
-    userOrg = ''
-    repoName = 'maven-math'
-    groupId = groupProjectID
-    artifactId = artifactProjectID
-    publishVersion = publishVersionID
-    desc = 'Library of Arithmetic Operations.'
-    website = 'https://github.com/saindane99/Maths'
-
-
-    publishing {
-        publications {
-            MyPub(MavenPublication) {
-                groupId groupProjectID
-                artifactId artifactProjectID
-                version publishVersionID
-
-                //don't forget to add bundleRelease
-                artifact bundleRelease
-
-            }
-        }
-    }
-    publications = ['MyPub']
-}
