@@ -1,8 +1,6 @@
 apply plugin: 'com.jfrog.bintray'
 
-group = 'com.maths.mylib'
-version = '1.0.4'
-//version = libraryVersion
+version = libraryVersion
 
 /*
  * Comment the following part if you only want to distribute .aar files.
